@@ -1,0 +1,17 @@
+{
+  "name": "helpdesk-mini",
+  "version": "1.0.0",
+  "description": "Ticket management system with SLA tracking",
+  "scripts": {
+    "server": "cd backend && npm run dev",
+    "client": "cd frontend && npm start",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "install-all": "npm install && cd backend && npm install && cd ../frontend && npm install"
+  },
+  "keywords": ["helpdesk", "ticket-management", "sla"],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
